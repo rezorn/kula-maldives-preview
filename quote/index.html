@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get A Quote | Kula Maldives</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="../index.html#top">
+        <img class="logo" src="../assets/kula-maldives-logo.png" alt="Kula Maldives — back to top" width="1764" height="1042">
+      </a>
+      <nav aria-label="Main navigation">
+        <details class="services-menu">
+          <summary>Services</summary>
+          <ul>
+            <li><a href="../services/led-signages.html">LED Signages</a></li>
+            <li><a href="../services/signages.html">Signages</a></li>
+            <li><a href="../services/offset-printing.html">Offset Printing</a></li>
+            <li><a href="../services/large-format-printing.html">Large Format Printing</a></li>
+            <li><a href="../services/billboard-printing-installation.html">Billboard Printing &amp; Installation</a></li>
+            <li><a href="../services/vehicle-wrapping.html">Vehicle Wrapping</a></li>
+            <li><a href="../services/vehicle-registration-boards.html">Vehicle Registration Boards</a></li>
+            <li><a href="../services/t-shirt-printing.html">T-Shirt Printing</a></li>
+            <li><a href="../services/laser-engraving-cutting.html">Laser Engraving &amp; Cutting</a></li>
+            <li><a href="../services/cnc.html">CNC</a></li>
+            <li><a href="../services/sublimation-printing.html">Sublimation Printing</a></li>
+          </ul>
+        </details>
+        <a href="../works/index.html">Our Works</a>
+        <a href="../clients/index.html">Our Clients</a>
+        <a href="index.html" aria-current="page">Get A Quote</a>
+        <a href="../about/index.html">About Us</a>
+        <a href="../index.html#contact">Contact Us</a>
+        <a href="../store/index.html">Online Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact section" id="quote" aria-labelledby="quote-title">
+    <div class="wrap contact-inner">
+      <div>
+        <h1 id="quote-title">Get A Quote</h1>
+        <p>Review copy. Quote submission will be available on the live site.</p>
+        <form id="quote-form" class="quote-form" action="../api/quote" method="post" enctype="multipart/form-data">
+          <div class="quote-fields">
+            <label>Name
+              <input name="name" autocomplete="name" maxlength="100" required>
+            </label>
+            <label>Email
+              <input name="email" type="email" autocomplete="email" maxlength="254" required>
+            </label>
+            <label>Contact Number
+              <input name="phone" type="tel" autocomplete="tel" maxlength="40" required>
+            </label>
+            <label>Subject
+              <input name="subject" maxlength="150" required>
+            </label>
+          </div>
+          <label>Details
+            <textarea name="details" rows="5" maxlength="5000" required></textarea>
+          </label>
+          <label>Attachments (optional)
+            <input name="attachments" type="file" accept=".pdf,.jpg,.jpeg,.png,.webp,.gif,.heic,.heif,.avif" multiple aria-describedby="quote-attachment-note">
+          </label>
+          <p class="quote-note" id="quote-attachment-note">Up to 5 PDFs or images, 5 MB per file and 15 MB total.</p>
+          <div hidden><input name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button class="button button-light" type="submit" disabled>Send Quote Request</button>
+          <p class="quote-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="checklist">
+        <h3>What to include</h3>
+        <ul>
+          <li>Item you need</li>
+          <li>Dimensions</li>
+          <li>Quantity</li>
+          <li>Installation location, if relevant</li>
+          <li>Deadline</li>
+        </ul>
+        <a class="button quote-whatsapp" href="https://wa.me/9609448929">Ask us on WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="wrap site-footer">
+    <span>Kula Maldives</span>
+    <span>Malé, Maldives</span>
+  </footer>
+  <script src="../assets/services-menu.js"></script>
+  <script src="../assets/quote-form.js"></script>
+</body>
+</html>
